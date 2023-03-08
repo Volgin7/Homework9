@@ -53,8 +53,8 @@ public class Main {
     public static void task3() {
         System.out.println("Задача 3");
         int[] array = generateRandomArray();
-        int totalPayments = 0;
-        int averageDailyPayment;
+        float totalPayments = 0f;
+        float averageDailyPayment;
         int numberOfDays = 30;
 
         for(int payment:array) {
@@ -71,6 +71,11 @@ public class Main {
 
         for (int i = 0; i < reverseFullName.length; i++) {
             System.out.print(reverseFullName[reverseFullName.length-1-i]);
+        }
+        System.out.println();
+
+        for (int i = reverseFullName.length -1; i >= 0; i--) {
+            System.out.print(reverseFullName[i]);
         }
         System.out.println();
     } // end of task
