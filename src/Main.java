@@ -5,6 +5,7 @@ public class Main {
 
         task1();
         task2();
+        task3();
 
     }
 
@@ -44,7 +45,22 @@ public class Main {
             }
         }
         System.out.print("Минимальная сумма трат за день составила " + minPayment + " рублей. ");
-        System.out.print("Максимальная сумма трат за день составила " + maxPayment + " рублей");
+        System.out.println("Максимальная сумма трат за день составила " + maxPayment + " рублей");
+        System.out.println();
+    } // end of task
+
+    public static void task3() {
+        System.out.println("Задача 3");
+        int[] array = generateRandomArray();
+        int totalPayments = 0;
+        int averageDailyPayment;
+        int numberOfDays = 30;
+
+        for(int payment:array) {
+            totalPayments += payment;
+        }
+        averageDailyPayment = totalPayments / numberOfDays;
+        System.out.println("Средняя сумма трат за месяц составила " + averageDailyPayment + " рублей");
         System.out.println();
     } // end of task
 
