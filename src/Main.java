@@ -10,11 +10,12 @@ public class Main {
     public static void task1() {
         System.out.println("Задача 1");
         int[] array = generateRandomArray();
-        System.out.println(Arrays.toString(array));
+        int totalPayments = 0;
 
-
-
-
+        for(int payment:array) {
+            totalPayments += payment;
+        }
+        System.out.println("Сумма трат за месяц составила " + totalPayments + " рублей");
         System.out.println();
     } // end of task
 
