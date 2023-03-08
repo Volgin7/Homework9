@@ -6,6 +6,7 @@ public class Main {
         task1();
         task2();
         task3();
+        task4();
 
     }
 
@@ -61,6 +62,16 @@ public class Main {
         }
         averageDailyPayment = totalPayments / numberOfDays;
         System.out.println("Средняя сумма трат за месяц составила " + averageDailyPayment + " рублей");
+        System.out.println();
+    } // end of task
+
+    public static void task4() {
+        System.out.println("Задача 4");
+        char[] reverseFullName = { 'n', 'a', 'v', 'I', ' ', 'v', 'o', 'n', 'a', 'v', 'I'};
+
+        for (int i = 0; i < reverseFullName.length; i++) {
+            System.out.print(reverseFullName[reverseFullName.length-1-i]);
+        }
         System.out.println();
     } // end of task
 
